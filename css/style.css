@@ -1,0 +1,121 @@
+/* :root {
+    --primary-color: #bd632f;
+    --secondary-color: #d8973c;
+    --neutral-color: #d8c99b;
+    --neutral-dark: #273e47;
+    --accent-color: #a4243b;
+}
+
+.container{
+    background-color: var(--neutral-dark);
+}
+
+h1, h2 {
+    color: var(--primary-color);
+}
+
+h3 {
+    color: var(--secondary-color)
+}
+
+p {
+    color: var(--neutral-color)
+} */
+
+.site-nav {
+    background: var(--neutral-dark);
+    color: var(--neutral-color);
+    border-bottom: 1px solid rgba(255,255,255,0.03);
+}
+
+.site-nav .nav-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0.6rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.site-nav .brand {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    text-decoration: none;
+    color: inherit;
+}
+
+.site-nav .logo {
+    width: 44px;
+    height: 44px;
+    object-fit: contain;
+    background: var(--neutral-color);
+    border-radius: 6px;
+}
+
+.brand-text {
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    color: var(--neutral-color);
+    text-decoration: none;
+    padding: 0.35rem 0.5rem;
+    border-radius: 4px;
+}
+
+.nav-links a:hover {
+    background: rgba(255,255,255,0.03);
+}
+
+.nav-toggle {
+    display: none;
+    background: transparent;
+    border: none;
+    padding: 0.25rem;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background: var(--neutral-color);
+    border-radius: 2px;
+    position: relative;
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: '';
+    position: absolute;
+    left: 0;
+}
+
+.hamburger::before { top: -7px; }
+.hamburger::after { top: 7px; }
+
+/* mobile */
+@media (max-width: 720px) {
+    .nav-toggle { display: block; }
+    .nav-links { display: none; position: absolute; right: 1rem; top: 64px; background: var(--neutral-dark); padding: 0.75rem 1rem; border-radius: 8px; box-shadow: 0 6px 18px rgba(0,0,0,0.3); flex-direction: column; gap: 0.5rem; }
+    .nav-links.open { display: flex; }
+}
+
+circle {
+    width: 100px; 
+    height: 100px;
+    background-color: var(--accent-color);
+    border-radius: 50%;
+}
