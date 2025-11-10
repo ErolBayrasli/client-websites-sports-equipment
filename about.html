@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About — Sports Equipment</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/about.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark site-nav">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="logo.png" alt="Sports Equipment" width="70" height="64">
+        <span class="brand-text ms-2">Sports Equipment</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="product.html">Products</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="about-hero">
+      <div class="container">
+        <h1>About Sports Equipment</h1>
+        <p class="lead">Supplying high-quality gear for players and teams since day one — simple, dependable, and built for performance.</p>
+        <p class="muted">We design, source, and ship footwear, apparel, and accessories for athletes of every level. Our focus is product quality, honest prices, and fast service.</p>
+      </div>
+      <div class="hero-art">
+        <img src="product img/neymar training.jpg" alt="Athlete training">
+      </div>
+    </section>
+
+    <section class="about-mission">
+      <div class="container">
+        <h2>Our mission</h2>
+        <p>To help athletes perform their best by providing the right equipment — thoughtfully chosen, ethically sourced, and fairly priced.</p>
+      </div>
+    </section>
+
+    <section class="about-values">
+      <div class="container values-grid">
+        <div class="value">
+          <h3>Quality</h3>
+          <p>We test gear in real conditions and prioritize proven performance.</p>
+        </div>
+        <div class="value">
+          <h3>Community</h3>
+          <p>We support local teams and grassroots programs to grow the game.</p>
+        </div>
+        <div class="value">
+          <h3>Service</h3>
+          <p>Fast answers, fair returns, and an honest shopping experience.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-team">
+      <div class="container">
+        <h2>Meet the team</h2>
+        <div class="team-grid">
+          <div class="team-member">
+            <img src="product img/neymar_on_grass-removebg-preview.png" alt="Team member">
+            <h4>Alex</h4>
+            <p class="muted">Founder & product lead</p>
+          </div>
+          <div class="team-member">
+            <img src="product img/Puma Neymar Training Top.png" alt="Team member">
+            <h4>Sam</h4>
+            <p class="muted">Operations</p>
+          </div>
+          <div class="team-member">
+            <img src="product img/Nike Air Zoom Mercurial Superfly.png" alt="Team member">
+            <h4>Jamie</h4>
+            <p class="muted">Customer success</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container" style="padding:2rem 1rem; color:var(--neutral);">
+    <small>© <span id="year"></span> Sports Equipment — All rights reserved.</small>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+</body>
+</html>
