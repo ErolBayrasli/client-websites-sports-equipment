@@ -9,6 +9,9 @@ main { padding: 4rem 0; max-width: var(--container-max); margin: 0 auto; }
 /* smooth scrolling for nicer feel */
 html { scroll-behavior: smooth; }
 
+/* enable scrolling only on the About page */
+html, body { overflow: auto; }
+
 .about-hero {
 	display: grid;
 	grid-template-columns: 1fr 420px;
